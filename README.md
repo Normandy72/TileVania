@@ -13,5 +13,10 @@
 5. add idle animation to Animator Controller;
 6. add Animator to Player;
 7. assign Character Animator Controller to Player.
+
+## Prefabs
+* Prefabs are game objects which we have turned into reusable templates.
+* The original template is called the __Prefab__ and the copies we add into our scene are called __Instances__.
+* Turning a game object into a prefab means we can easily load into any scene in our game.
 ***
 # ~ C# ~
