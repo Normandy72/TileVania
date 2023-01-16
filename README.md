@@ -5,7 +5,7 @@
 * __Animation__ - specific pieces of motion.
 * __Sprite Renderer__ - displays the 2D sprite on screen.
 
-#### Steps to set up character's idle
+#### Steps to set up character's idle:
 1. import spritesheet and slice;
 2. add sprite renderer to Player;
 3. create idle animation clip;
