@@ -22,5 +22,24 @@
 * If the player is pushing right, the velocity will be positive. If left, then negative.
 * If movement right, we should face right. If left, face left.
 * We can change the facing direction (right or left) by changing the localscale using +ve or -ve value.
+* Only change facing direction if moving, so weird things don't happen when velocity is zero.
 ***
 # ~ C# ~
+## Mathf.Sign
+* `Mathf.Sign(float f);`
+* Returns the sign of f.
+* Return value is 1 when f is positive or zero, -1 when f is negative.
+
+## Mathf.Abs
+* `Mathf.Abs(float f);`
+* Returns the absolute value of f.
+
+## Mathf.Epsilon
+* A tiny floating point value (Read Only).
+* The smallest value that a float can have different from zero.
+* With the following rules:
+    * anyValue + Epsilon = anyValue
+    * anyValue - Epsilon = anyValue
+    * 0 + Epsilon = Epsilon
+    * 0 - Epsilon = -Epsilon
+* A value Between any number and Epsilon will result in an arbitrary number due to truncating errors.
