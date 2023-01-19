@@ -23,6 +23,18 @@
 * If movement right, we should face right. If left, face left.
 * We can change the facing direction (right or left) by changing the localscale using +ve or -ve value.
 * Only change facing direction if moving, so weird things don't happen when velocity is zero.
+## Layers
+* Layers are useful if we have the same functionality across multiple GameObjects. E.g. ignored by camera, not clickable, collision check.
+* To stop jumping anytime we use `Collider2D.IsTouchingLayers()`.
+
+#### Collider2D.IsTouchingLayers()
+* Checks whether this collider is touching any colliders on the specified layerMask or not.
+* Returns __bool__.
+
+#### LayerMask.GetMask()
+* Given a set of layer names as defined by either a Builtin or a User Layer in the Tags and Layers manager, returns the equivalent layer mask for all of them.
+* Returns __int__ (the layer mask created from the layerNames).
+
 ***
 # ~ C# ~
 ## Mathf.Sign
