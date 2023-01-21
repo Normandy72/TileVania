@@ -60,6 +60,7 @@ public class GameSession : MonoBehaviour
     // If the player loses ALL their lives - back to Level 1
     void ResetGameSession()
     {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
